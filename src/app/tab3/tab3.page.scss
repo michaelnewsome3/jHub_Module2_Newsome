@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Lora");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+
+ion-toolbar{
+	--background:#FBFFC7;
+}
+ion-content{
+	--background:#FBFFC7;
+}
+ion-list{
+	background-color:#FBFFC7;
+}
+
+H1{
+	color: #0000FF;
+	text-align:center;
+	font-family:Lora;
+	font-size:52px;
+	font-weight:bold;
+}
+
+ion-label{
+	padding-left:5%;
+}
+
+ion-select{
+	color: #0074E0;
+	padding-right:5%;
+}
+
+.Sort{
+	
+	font-family:Merriweather;
+	font-size:32px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	--background:#FBFFC7;
+}
+
+.SortText{
+	color:#0074E0;
+}
+
+.Container{
+	width: 100%;
+}
+
+	
+.Claims{
+	color: #0D8CFF;
+	font-family:Merriweather;
+	font-size:24px;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	--background:#FBFFC7;
+}
+
+.ClaimsText{
+	float: left;
+}
+
+.Menu{
+	float:right;
+}
+
+.Footer{
+	font-family:Merriweather;
+	margin-left:5%;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+ion-button{
+	text-transform:none;
+	--color:#FBFFC7;
+	--background:#0074E0;
+}

@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+	<ion-toolbar>
+		<ion-title>
+			<H1>Summary</H1>
+		</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+	<H2>Claims total:</H2>
+	
+	<div *ngIf="photoService.claimExistsActive===true; else noclaimsActive">
+		<H3>Active claims: &pound;{{photoService.claimTotActive.toFixed(2)}}</H3>
+	</div>
+	
+	<ng-template #noclaimsActive>	
+		<H3>No active claims</H3>
+	</ng-template>
+	
+	<div *ngIf="photoService.claimExistsArchive===true; else noclaimsArchive">
+		<H3>Archived claims: &pound;{{photoService.claimTotArchive.toFixed(2)}}</H3>
+	</div>
+	
+	<ng-template #noclaimsArchive>	
+		<H3>No archived claims</H3>
+	</ng-template>
+	
+</ion-content>
+
+<ion-footer>
+	<div class="Container">	
+		<ion-button (click)="addClaim()">
+			<ion-icon name="camera"></ion-icon>  
+				<p>Add a Claim</p>  
+			<ion-icon name="camera"></ion-icon>
+		</ion-button>
+	</div>
+</ion-footer>

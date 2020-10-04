@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+	<ion-toolbar>
+		<ion-title>
+			<H1>Archive</H1>
+		</ion-title>
+	</ion-toolbar>
+	
+	<ion-item class="Sort">
+		<ion-label><div class="SortText">Sort</div></ion-label>
+		<ion-select [(ngModel)]="photoService.sortActive" (ionChange)="sortChange()" interface="popover" placeholder="Select One">
+			<ion-select-option  value="sortActiveName">Name</ion-select-option>
+			<ion-select-option value="sortActiveDate">Date</ion-select-option>
+		</ion-select>
+	</ion-item>
+	
+</ion-header>
+
+<ion-content [fullscreen]="true">
+	
+	<ion-list *ngFor="let claim of photoService.claimsArchive; index as position" >
+		<ion-item class="Claims">
+			<div class="Container">	
+				<div class="ClaimsText">{{claim.name}}</div>
+				<ion-button class="Menu" (click)="showMenu(claim)">+</ion-button>
+			</div>
+		</ion-item>
+	</ion-list>
+	
+</ion-content>
+
+<ion-footer>
+	<ion-toolbar>
+		<ion-button class="Footer" (click)="delAll()">Delete All</ion-button>
+	</ion-toolbar>
+</ion-footer>
