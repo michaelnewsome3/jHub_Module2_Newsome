@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Options</ion-title>
+  
+		<ion-buttons slot="end">
+			<ion-button (click)="CloseModal()">
+				<ion-icon slot="icon-only" name="close"></ion-icon>
+			</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+	
+</ion-header>
+
+<ion-content>
+	<ion-button (click)="InfoClaim()">Info</ion-button>
+	<ion-button (click)="UnArchiveClaim()">Un-Archive</ion-button>
+	<ion-button (click)="DeleteClaim()">Delete</ion-button>
+</ion-content>

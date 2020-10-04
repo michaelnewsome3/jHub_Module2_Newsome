@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Lora");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+
+ion-toolbar{
+	--background:FBFFC7;
+}
+
+ion-content{
+	--background:FBFFC7;
+}
+
+H2{
+	color: #0D8CFF;
+	text-align:Left;
+	font-family:Merriweather;
+	font-size:32px;
+	font-weight:bold;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.myModal{
+    width: auto !important;
+    margin: 0 auto;
+    bottom: initial !important;
+
+    max-height: initial !important;
+    height: auto !important;
+    min-height: initial !important;
+
+    ion-content{
+        position: relative;
+        bottom: initial;
+    }
+}
+
+ion-button{
+	--background:0D8CFF;
+	--color:FBFFC7;
+}
