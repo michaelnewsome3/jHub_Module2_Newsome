@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Lora");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+
+ion-toolbar{
+	--ion-background-color:#FBFFC7;
+}
+
+ion-content{
+	--ion-background-color:#FBFFC7;
+}
+
+H2{
+	color: #0000FF;
+	text-align:Left;
+	font-family:Merriweather;
+	font-size:32px;
+	font-weight:bold;
+	text-align:center;
+}
+
+.menuButton{
+	font-family:Merriweather;
+	--color:#FBFFC7;
+	--background:#0074E0;
+}
+

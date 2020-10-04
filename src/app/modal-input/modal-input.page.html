@@ -1,0 +1,25 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-title><H2>Information</H2></ion-title>
+		
+		<ion-buttons slot="end">
+			<ion-button (click)="CloseModal()">
+				<ion-icon slot="icon-only" name="close"></ion-icon>
+			</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>	
+	<ion-text>Name</ion-text>
+	<ion-input Placeholder="Name Value" [(ngModel)]="claimData.name"></ion-input>
+	
+	<ion-text>Amount</ion-text>
+	<ion-input Placeholder="&pound;" [(ngModel)]="amountstr"></ion-input>
+	
+	<ion-text>Description</ion-text>
+	<ion-textarea Placeholder="Description Value" [(ngModel)]="claimData.description"></ion-textarea>
+	
+	<ion-button class="saveButton" expand="block" (click)="passData()">Save Claim</ion-button>
+	
+</ion-content>

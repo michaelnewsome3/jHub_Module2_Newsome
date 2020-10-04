@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Lora");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+
+ion-toolbar{
+	--background:#FBFFC7;
+}
+
+ion-content{
+	--background:#FBFFC7;
+}
+
+H2{
+	color: #0000FF;
+	text-align:Left;
+	font-family:Merriweather;
+	font-size:32px;
+	font-weight:bold;
+	text-align:center;
+}
+
+ion-img{
+	margin-left:5%;
+	margin-right:5%;
+}
+
+.container{
+	width:100%;
+	color: #0D8CFF;
+	font-family:Merriweather;
+	font-size:24px;
+	margin-left:5%;
+	margin-right:5%;
+	font-weight:bold;
+	width:90%;
+	word-wrap:break-word;
+}
+
+.val{
+	color: #000000;
+	font-weight:normal;
+}
+
+.closeButton{
+	margin-left:5%;
+	margin-right:5%;
+	font-family:Merriweather;
+	text-transform: none;
+	margin-bottom:10px;
+	--background:#0074E0;
+	--color:#FBFFC7;
+}

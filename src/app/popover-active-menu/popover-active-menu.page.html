@@ -1,0 +1,20 @@
+ <ion-header>
+	<ion-toolbar>
+		<ion-title>
+			<H2>Options</H2>
+		</ion-title>
+  
+		<ion-buttons slot="end">
+			<ion-button (click)="ClosePopover()">
+				<ion-icon slot="icon-only" name="close"></ion-icon>
+			</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-button expand="block" class="menuButton" (click)="InfoClaim()">Info</ion-button>
+	<ion-button expand="block" class="menuButton" (click)="EditClaim()">Edit</ion-button>
+	<ion-button expand="block" class="menuButton" (click)="ArchiveClaim()">Archive</ion-button>
+	<ion-button expand="block" class="menuButton" (click)="DeleteClaim()">Delete</ion-button>
+</ion-content>

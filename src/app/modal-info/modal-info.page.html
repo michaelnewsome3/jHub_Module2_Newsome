@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><H2>Claim Info</H2></ion-title>
+  
+		<ion-buttons slot="end">
+			<ion-button (click)="CloseModal()">
+				<ion-icon slot="icon-only" name="close"></ion-icon>
+			</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-img src="{{ claim.base64 ? claim.base64 : claim.webviewPath }}"></ion-img>
+	<p class="container">Name: <span class="val">{{claim.name}}</span></p>
+	<p class="container">Amount: <span class="val">&pound;{{claim.amount.toFixed(2)}}</span></p>
+	<p class="container">Date Created: <span class="val">{{activeDate.getDate()}} / {{activeDate.getMonth()}} / {{activeDate.getFullYear()}}  {{activeDate.getHours()}}:{{activeDate.getMinutes()}}</span></p>
+	<p class="container" *ngIf="claim.description!='';">Description: <span class="val">{{claim.description}}</span></p>
+	<p class="container" *ngIf="claim.archive===true;">Archive Date: <span class="val">{{archiveDate.getDate()}} / {{archiveDate.getMonth()}} / {{archiveDate.getFullYear()}}  {{archiveDate.getHours()}}:{{archiveDate.getMinutes()}}</span></p>
+	<ion-button class="closeButton" expand="block" (click)="CloseModal()">Close</ion-button>
+</ion-content>

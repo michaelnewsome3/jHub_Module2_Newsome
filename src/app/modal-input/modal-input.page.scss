@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Lora");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+
+ion-toolbar{
+	--background:#FBFFC7;
+}
+
+ion-content{
+	--background:#FBFFC7;
+}
+
+H2{
+	color: #0000FF;
+	text-align:Left;
+	font-family:Merriweather;
+	font-size:32px;
+	font-weight:bold;
+	text-align:center;
+}
+
+ion-content{
+	margin-top:5%;
+}
+
+ion-input{
+	margin-left:5%;
+	margin-right:5%;
+	width:90%;
+}
+
+ion-textarea{
+	margin-left:5%;
+	margin-right:5%;
+	width:90%;
+	color:#000000;
+}
+
+ion-text{
+	color: #0D8CFF;
+	font-family:Merriweather;
+	font-size:24px;
+	margin-left:5%;
+	margin-right:5%;
+	width:90%;
+}
+
+
+.saveButton{
+	margin-left:5%;
+	margin-right:5%;
+	font-family:Merriweather;
+	text-transform: none;
+	margin-bottom:10px;
+	--background:#0074E0;
+	--color:#FBFFC7;
+}
