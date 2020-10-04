@@ -1,0 +1,8 @@
+{
+  "name": "jHub_Module2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "8d3b55d8"
+}
